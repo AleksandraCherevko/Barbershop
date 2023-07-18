@@ -1,3 +1,7 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -43,12 +47,140 @@ img {
   list-style: none;
   box-sizing: border-box;
 }
-
-body {
-  font-family: "Open Sans", sans-serif;
-}
 /* header */
-
-/* navigation */
+.header {
+}
+.navigation {
+}
+.navlogo {
+}
+.header-list {
+}
+.header-item {
+}
+.header-link {
+}
+.header-tel {
+}
+.header-soc {
+}
+.header-soc-list {
+}
+.header-soc-item {
+}
+.header-soc-link {
+}
 
 /* hero */
+.hero {
+}
+.hero-pretitle {
+}
+.hero-title {
+}
+.hero-text {
+}
+
+/* about */
+.about {
+}
+.about-list {
+}
+.about-item {
+}
+.about-image {
+}
+.about-pre-title {
+}
+.about-title {
+}
+.about-after-title {
+}
+.about-text {
+}
+.about-button {
+}
+
+/* count */
+.count {
+}
+.count-pretitle {
+}
+.count-title {
+}
+.count-list {
+}
+.count-item {
+}
+.count-service {
+}
+.count-price {
+}
+
+/* benefits */
+.benefits {
+}
+.benefits-list {
+}
+.benefits-count {
+}
+.benefits-text {
+}
+.benefits-pre-title {
+}
+.benefits-title {
+}
+.benefits-after-title {
+}
+
+/* gallery */
+.gallery {
+}
+.gallery-pretitle {
+}
+.gallery-title {
+}
+.gallery-list {
+}
+.gallery-item {
+}
+.gallery-image {
+}
+
+/* barbers photos */
+.barbers-name {
+}
+.barbers-after-title {
+}
+.barbers-photos {
+}
+.barbers-text {
+}
+.barbers-list {
+}
+.barbers-item {
+}
+
+/* booking */
+.booking {
+}
+.contacts {
+}
+.contacts-title {
+}
+.address {
+}
+.address-list {
+}
+.address-item {
+}
+.adress-link {
+}
+.hours-title {
+}
+.schedulle {
+}
+
+/* footer */
+.footer {
+}
