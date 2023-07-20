@@ -24,8 +24,13 @@ a {
   text-decoration: none;
 }
 
-button {
+.btn {
   cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
 }
 
 img {
@@ -35,10 +40,15 @@ img {
 }
 
 .container {
-  text-align: center;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid #ff6c00;
+  margin: 0 auto;
+  /* text-align: center;
   max-width: 318px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 15px; */
 }
 
 * {
@@ -47,8 +57,33 @@ img {
   list-style: none;
   box-sizing: border-box;
 }
-/* header */
+
+:root {
+  --title-color: #ffffff;
+  --pretitle-color: #9da4bd99;
+  --text-color: #9da4bd;
+  --focus-color: #ff6c00;
+  --second-text-color: #303030;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.pretitle {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0em;
+}
+/* ----------------------------------------------------------------------------header----------------------------------------------------------------------------------- */
 .header {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .navigation {
 }
@@ -59,6 +94,15 @@ img {
 .header-item {
 }
 .header-link {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--focus-color);
 }
 .header-tel {
 }
@@ -69,20 +113,44 @@ img {
 .header-soc-item {
 }
 .header-soc-link {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.2em;
+  color: var(--second-text-color);
+}
+.header-soc-link:hover,
+.header-soc-link:focus {
+  color: var(--focus-color);
 }
 
-/* hero */
+/* ---------------------------------------------------------------------- hero------------------------------------------------------------------- */
 .hero {
+  background-color: chocolate;
 }
 .hero-pretitle {
+  color: var(--pretitle-color);
 }
 .hero-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: var(--title-color);
 }
 .hero-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
 }
 
-/* about */
+/* ---------------------------------------------------------------------------------about ------------------------------------------------------------*/
 .about {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .about-list {
 }
@@ -91,54 +159,116 @@ img {
 .about-image {
 }
 .about-pre-title {
+  margin-bottom: 20px;
+  color: var(--second-text-color);
 }
 .about-title {
+  margin-bottom: 20px;
+  color: var(--second-text-color);
 }
 .about-after-title {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
 }
 .about-text {
+  margin-bottom: 42px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.85;
+  letter-spacing: 0.02em;
+  color: #555555;
 }
 .about-button {
+  color: var(--second-text-color);
 }
 
-/* count */
+/* -----------------------------------------------------count----------------------------------- */
 .count {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: cornflowerblue;
 }
 .count-pretitle {
+  margin-bottom: 20px;
+  color: var(--pretitle-color);
 }
 .count-title {
+  margin-bottom: 44px;
+  color: var(--title-color);
 }
 .count-list {
 }
 .count-item {
 }
 .count-service {
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--text-color);
 }
 .count-price {
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  text-align: right;
+  color: var(--text-color);
 }
 
-/* benefits */
+/* ------------------------------------------------------benefits -----------------------------------------------------------------------*/
 .benefits {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .benefits-list {
 }
 .benefits-count {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+  color: var(--second-text-color);
 }
 .benefits-text {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0em;
+  color: var(--second-text-color);
 }
 .benefits-pre-title {
+  margin-bottom: 20px;
+  color: #303030;
 }
 .benefits-title {
+  margin-bottom: 20px;
+  color: var(--second-text-color);
 }
 .benefits-after-title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #555555;
 }
 
-/* gallery */
+/* ---------------------------------------------gallery------------------------------------------------*/
 .gallery {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .gallery-pretitle {
+  margin-bottom: 20px;
+  color: var(--second-text-color);
 }
 .gallery-title {
+  margin-bottom: 44px;
+  color: var(--second-text-color);
 }
 .gallery-list {
 }
@@ -147,26 +277,47 @@ img {
 .gallery-image {
 }
 
-/* barbers photos */
+/* -----------------------------------------------------barbers photos -----------------------------------------------------*/
 .barbers-name {
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
 }
 .barbers-after-title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: var(--focus-color);
 }
 .barbers-photos {
 }
 .barbers-text {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0em;
+  color: var(--second-text-color);
 }
 .barbers-list {
 }
 .barbers-item {
 }
 
-/* booking */
+/* ---------------------------------------------------------------------booking ----------------------------------------------------*/
 .booking {
 }
+
+.booking-title {
+  color: var(--title-color);
+}
+
+/* contacts */
 .contacts {
 }
 .contacts-title {
+  color: var(--title-color);
 }
 .address {
 }
@@ -175,12 +326,28 @@ img {
 .address-item {
 }
 .adress-link {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
 }
 .hours-title {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0em;
+  color: var(--title-color);
 }
 .schedulle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--text-color);
 }
 
-/* footer */
+/* ---------------------------------------------------------------footer ---------------------------------------------------------------*/
 .footer {
 }
