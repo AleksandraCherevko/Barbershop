@@ -25,12 +25,18 @@ a {
 }
 
 .btn {
+  min-width: 160px;
+  min-height: 40px;
   cursor: pointer;
   font-family: inherit;
   font-size: 12px;
   font-weight: 600;
   line-height: 1.33;
   letter-spacing: 0.09em;
+  border: 1px solid var(--focus-color);
+  text-transform: uppercase;
+  background-color: transparent;
+  border-radius: 25px;
 }
 
 img {
@@ -85,11 +91,22 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+.header > .container {
+  display: flex;
+  align-items: center;
+}
 .navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 .navlogo {
+  margin-right: 131px;
 }
 .header-list {
+  display: flex;
+  gap: 30px;
 }
 .header-item {
 }
@@ -105,30 +122,32 @@ img {
   color: var(--focus-color);
 }
 .header-tel {
-}
-.header-soc {
-}
-.header-soc-list {
-}
-.header-soc-item {
-}
-.header-soc-link {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   line-height: 1.4;
-  letter-spacing: 0.2em;
-  color: var(--second-text-color);
-}
-.header-soc-link:hover,
-.header-soc-link:focus {
-  color: var(--focus-color);
+  letter-spacing: 0.1em;
+  color: var(--title-color);
+  margin-right: 30px;
 }
 
 /* ---------------------------------------------------------------------- hero------------------------------------------------------------------- */
 .hero {
-  background-color: chocolate;
+}
+
+.hero > .container {
+  display: flex;
+}
+
+.hero-wrap {
+  background-color: yellowgreen;
+  flex-grow: 1;
+  padding-top: 272px;
+  padding-left: 100px;
+  padding-bottom: 208px;
+  padding-right: 100px;
 }
 .hero-pretitle {
+  text-transform: uppercase;
   color: var(--pretitle-color);
 }
 .hero-title {
@@ -145,6 +164,26 @@ img {
   font-weight: 400;
   line-height: 1.7;
   letter-spacing: 0.02em;
+  max-width: 360px;
+  color: var(--text-color);
+}
+.hero-soc {
+}
+.hero-soc-list {
+  width: 100px;
+}
+.hero-soc-item {
+}
+.hero-soc-link {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.2em;
+  color: var(--second-text-color);
+}
+.hero-soc-link:hover,
+.hero-soc-link:focus {
+  color: var(--focus-color);
 }
 
 /* ---------------------------------------------------------------------------------about ------------------------------------------------------------*/
@@ -152,24 +191,41 @@ img {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
+.about > .container {
+  display: flex;
+  gap: 30px;
+}
 .about-list {
+  display: flex;
+  gap: 30px;
+}
+
+.about-wrap {
+  max-width: 470px;
 }
 .about-item {
 }
 .about-image {
 }
 .about-pre-title {
+  text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--second-text-color);
 }
 .about-title {
+  font-family: "Raleway", serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  text-align: left;
+
   margin-bottom: 20px;
-  color: var(--second-text-color);
 }
 .about-after-title {
   margin-bottom: 20px;
   font-size: 18px;
-  font-weight: 400;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #555555;
@@ -177,7 +233,6 @@ img {
 .about-text {
   margin-bottom: 42px;
   font-size: 14px;
-  font-weight: 400;
   line-height: 1.85;
   letter-spacing: 0.02em;
   color: #555555;
@@ -190,9 +245,24 @@ img {
 .count {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: cornflowerblue;
+  background-color: lightsteelblue;
+}
+
+.count-wrap {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 44px;
+}
+.count-list {
+  border: 1px solid red;
+  width: calc((100% - 30px) / 2);
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
 }
 .count-pretitle {
+  text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--pretitle-color);
 }
@@ -200,25 +270,32 @@ img {
   margin-bottom: 44px;
   color: var(--title-color);
 }
-.count-list {
-}
+
 .count-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.count-item + .count.item {
+  margin-top: 20px;
 }
 .count-service {
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.02em;
-  text-align: left;
   color: var(--text-color);
 }
 .count-price {
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.02em;
-  text-align: right;
   color: var(--text-color);
 }
-
+.count-btn {
+  color: var(--title-color);
+  display: block;
+  margin: 0 auto;
+}
 /* ------------------------------------------------------benefits -----------------------------------------------------------------------*/
 .benefits {
   padding-top: 120px;
@@ -263,6 +340,7 @@ img {
   padding-bottom: 120px;
 }
 .gallery-pretitle {
+  text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--second-text-color);
 }
@@ -271,20 +349,27 @@ img {
   color: var(--second-text-color);
 }
 .gallery-list {
+  display: flex;
+  gap: 30px;
 }
 .gallery-item {
+  width: calc((100% - 60px) / 3);
 }
 .gallery-image {
 }
 
 /* -----------------------------------------------------barbers photos -----------------------------------------------------*/
 .barbers-name {
+  margin-top: 24px;
   font-size: 18px;
   line-height: 1.4;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
+  text-align: center;
 }
 .barbers-after-title {
+  text-align: center;
+  margin-top: 18px;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.4;
@@ -294,6 +379,8 @@ img {
 .barbers-photos {
 }
 .barbers-text {
+  margin-bottom: 44px;
+  text-transform: uppercase;
   font-size: 11px;
   font-weight: 600;
   line-height: 1.4;
@@ -301,8 +388,11 @@ img {
   color: var(--second-text-color);
 }
 .barbers-list {
+  display: flex;
+  gap: 30px;
 }
 .barbers-item {
+  width: calc((100% - 90px) / 4);
 }
 
 /* ---------------------------------------------------------------------booking ----------------------------------------------------*/
