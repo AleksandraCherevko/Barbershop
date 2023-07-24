@@ -1,12 +1,26 @@
-/* header */
-@media (min-width: 768px) { 
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
+  /* count */
 
-  
- }
+  .count > .container {
+    max-width: 418px;
+    width: 100%;
+  }
 
-/* navigation */
+  /* barbers */
+  .barbers-photos-gallery > .container {
+    max-width: 448px;
+    width: 100%;
+  }
 
-/* hero */
+  .gallery > .container {
+    max-width: 480px;
+    width: 100%;
+  }
+  .benefits > .container {
+    max-width: 448px;
+    width: 100%;
+  }
+}
