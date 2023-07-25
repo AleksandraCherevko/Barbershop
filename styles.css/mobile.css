@@ -2,6 +2,13 @@
   .container {
     width: 480px;
   }
+
+  /* about */
+
+  .about > .container {
+    max-width: 418px;
+    width: 100%;
+  }
   /* count */
 
   .count > .container {
@@ -21,6 +28,25 @@
   }
   .benefits > .container {
     max-width: 448px;
+    width: 100%;
+  }
+
+  /* booking  */
+
+  .online > .container {
+    max-width: 480px;
+    width: 100%;
+  }
+
+  .contacts > .container {
+    max-width: 418px;
+    width: 100%;
+  }
+
+  /* footer */
+
+  .footer > .container {
+    max-width: 380px;
     width: 100%;
   }
 }

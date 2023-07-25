@@ -2,6 +2,29 @@
   .container {
     width: 1200px;
   }
+  /* about */
+
+  .about > .container {
+    max-width: 1170px;
+    width: 100%;
+  }
+  .about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .about-list {
+    display: flex;
+    gap: 30px;
+  }
+
+  .about-text {
+    margin-bottom: 42px;
+    font-size: 14px;
+    line-height: 1.85;
+    letter-spacing: 0.02em;
+    color: #555555;
+  }
 
   /* count */
 
@@ -119,4 +142,37 @@
   .barbers-item {
     width: calc((100% - 90px) / 4);
   }
+
+  /* booking  */
+  .online > .container {
+    max-width: 1600px;
+    width: 100%;
+  }
+
+  .online {
+    padding-top: 130px;
+    padding-bottom: 120px;
+    padding-right: 30px;
+    width: calc(50% + 15px);
+  }
+
+  .online-input {
+    width: 270px;
+  }
+
+  .contacts {
+    padding-top: 130px;
+    padding-bottom: 120px;
+    width: calc(50% - 15px);
+    padding-left: 100px;
+  }
+
+   /* footer */
+
+   .footer > .container {
+  display: flex;
+  align-items: center;
+  padding-right: 32px;
+  padding-left: 32px;
+}
 }
