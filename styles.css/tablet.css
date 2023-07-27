@@ -134,10 +134,11 @@
 
   .count-wrap {
     width: 703px;
+    margin-bottom: 20px;
   }
   /* benefits */
   .benefits > .container {
-    max-width: 719px;
+    max-width: 689px;
     width: 100%;
   }
 
