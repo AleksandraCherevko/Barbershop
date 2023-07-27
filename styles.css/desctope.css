@@ -2,6 +2,70 @@
   .container {
     width: 1200px;
   }
+
+  /* header + hero */
+
+  .header > .container {
+    max-width: 1225px;
+    width: 100%;
+  }
+  .header-list {
+    display: flex;
+    gap: 30px;
+  }
+  .header-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    transition: color 300ms linear;
+    position: relative;
+  }
+
+  .hero > .container {
+    max-width: 1225px;
+    width: 100%;
+  }
+  .hero-wrap {
+    padding: 272px 100px 208px 100px;
+    background-image: var(--bg-gradient), url(../images/Hero-desctope.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-wrap {
+      background-image: var(--bg-gradient), url(../images/hero-dectope-2x.jpg);
+    }
+  }
+  .hero-soc-wrap {
+    width: 100px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 27px;
+    padding-bottom: 40px;
+  }
+
+  .hero-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    color: var(--first-title-color, #ffffff);
+  }
+
+  .navlogo {
+    margin-right: 130px;
+    fill: #ffffff;
+  }
+
+  .header-button-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
   /* about */
 
   .about > .container {
@@ -15,6 +79,7 @@
 
   .about-list {
     display: flex;
+    flex-wrap: nowrap;
     gap: 30px;
   }
 
@@ -24,8 +89,11 @@
     line-height: 1.85;
     letter-spacing: 0.02em;
     color: #555555;
+    width: 470px;
   }
-
+  .about-after-title {
+    width: 470px;
+  }
   /* count */
 
   .count > .container {
@@ -167,12 +235,10 @@
     padding-left: 100px;
   }
 
-   /* footer */
+  /* footer */
 
-   .footer > .container {
-  display: flex;
-  align-items: center;
-  padding-right: 32px;
-  padding-left: 32px;
-}
+  .footer > .container {
+    max-width: 1600px;
+    width: 100%;
+  }
 }

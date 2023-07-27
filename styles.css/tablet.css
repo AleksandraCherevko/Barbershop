@@ -2,6 +2,79 @@
   .container {
     width: 720px;
   }
+
+  /* header + hero */
+
+  .header > .container {
+    max-width: 680px;
+    width: 100%;
+    display: flex;
+  }
+
+  .header-list {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    display: flex;
+    gap: 10px;
+  }
+
+  .header-tel {
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    /* margin-right: 30px; */
+  }
+  .header-btn {
+    display: block;
+    color: #ffffff;
+  }
+
+  .hero-soc-wrap {
+    width: 100px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 27px;
+    padding-bottom: 40px;
+  }
+
+  .hero > .container {
+    max-width: 690px;
+    width: 100%;
+  }
+
+  .hero-wrap {
+    padding: 210px 10px;
+    background-image: var(--bg-gradient), url(../images/hero.tablet.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-wrap {
+      background-image: var(--bg-gradient), url(../images/hero-tablet-2x.jpg);
+    }
+  }
+
+  .navlogo {
+    display: block;
+    margin-left: 0;
+    margin-right: 50px;
+    fill: #ffffff;
+  }
+
+  .header-button-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 15px;
+  }
   /* about */
   .about {
     padding-top: 100px;
@@ -150,13 +223,23 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
- 
-   /* footer */ 
 
-   .footer > .container {
-  display: flex;
-  align-items: center;
-  padding-right: 32px;
-  padding-left: 32px;
-}
+  /* footer */
+
+  .footer > .container {
+    max-width: 768px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .footer-social-list {
+    gap: 30px;
+  }
+
+  .copy-text {
+    padding-top: 0;
+  }
 }

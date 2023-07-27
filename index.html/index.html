@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- HEADER -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <nav class="navigation">
           <img
@@ -45,15 +45,17 @@
             </li>
           </ul>
         </nav>
-        <a class="header-tel" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button type="button" class="header-btn btn" data-modal-open>
-          Online-booking
-        </button>
+        <div class="header-button-wrap">
+          <a class="header-tel" href="tel:+380441111111">+38 044 111 11 11</a>
+          <button type="button" class="header-btn btn" data-modal-open>
+            Online-booking
+          </button>
+        </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- HERO-->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <div class="hero-soc-wrap">
             <ul class="hero-soc-list">
@@ -87,28 +89,60 @@
             </p>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- ABOUT -->
-      <!-- <section id="about" class="about">
+      <section id="about" class="about">
         <div class="container">
           <ul class="about-list">
             <li class="about-item">
-              <img
-                class="about-image"
-                src="../images/hero_1.pg.jpg"
-                alt="haircuts"
-                width="270"
-                height="445"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ../images/hero1-desctope-1x.jpg 1x,
+                    ../images/hero1-desctope-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ../images/hero1-tablet-1x.jpg 1x,
+                    ../images/hero1-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  src="../images/hero1-tablet-1x.jpg"
+                  alt="hero1"
+                  width="330"
+                  height="235"
+                />
+              </picture>
             </li>
             <li class="about-item">
-              <img
-                class="about-image"
-                src="../images/hero_2.jpg"
-                alt="haircuts"
-                width="270"
-                height="445"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ../images/hero2-desctope-1x.jpg 1x,
+                    ../images/hero2-desctope-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ../images/hero2-tablet-1x.jpg 1x,
+                    ../images/hero2-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <img
+                  src="../images/hero2-tablet-1x.jpg"
+                  alt="hero1"
+                  width="330"
+                  height="235"
+                />
+              </picture>
             </li>
           </ul>
 
@@ -132,9 +166,9 @@
             </button>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- COUNT -->
-      <!-- <section class="count">
+      <section class="count">
         <div class="container">
           <p class="count-pretitle pretitle">
             Spend your time with the best masters
@@ -180,9 +214,9 @@
           </div>
           <button class="count-btn btn">Online-booking</button>
         </div>
-      </section> -->
+      </section>
       <!-- BENEFITS -->
-      <!-- <section class="benefits">
+      <section class="benefits">
         <div class="container">
           <div class="benefits-count-wrap">
             <ul class="benefits-list">
@@ -213,9 +247,9 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- GALLERY -->
-      <!-- <section class="gallery" id="barbers">
+      <section class="gallery" id="barbers">
         <div class="container">
           <p class="gallery-pretitle pretitle">
             For true enjoyers of the atmosphere
@@ -224,13 +258,46 @@
           <ul class="gallery-list">
             <li class="gallery-item">
               <div class="gallety-text-wrap">
-                <img
+                <picture
+                  ><source
+                    srcset="
+                      ../images/johnsmith-desctope-1x.jpg 1x,
+                      ../images/johnsmith-desctope-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/johnsmith-tablet-1x.jpg 1x,
+                      ../images/johnsmith-tablet-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/johnsmith-mobile-1x.jpg 1x,
+                      ../images/johnsmith-mobile-2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+                  <img
+                    src="../images/johnsmith-mobile-1x."
+                    alt="hero1"
+                    width="450"
+                    height="346"
+                  />
+                </picture>
+                <!-- <img
                   class="gallery-image"
                   src="../images/johnsmith.jpg"
+                  srcset="
+                    ../images/johnsmith.jpg    1x,
+                    ../images/johnsmith-2x.jpg 2x
+                  "
                   alt="John Smith"
                   width="370"
                   height="346"
-                />
+                /> -->
                 <p class="gallery-top-text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Minus, eius?
@@ -271,13 +338,36 @@
             </li>
             <li class="gallery-item">
               <div class="gallety-text-wrap">
-                <img
-                  class="gallery-image"
-                  src="../images/micheledoe.jpg"
-                  alt="Michele Doe"
-                  width="370"
-                  height="346"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ../images/micheledoe-desctope-1x.jpg 1x,
+                      ../images/micheledoe-desctope-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/micheledoe-tablet-1x.jpg 1x,
+                      ../images/micheledoe-tablet-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/micheledoe-mobile-1x.jpg 1x,
+                      ../images/micheledoe-mobile-2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+
+                  <img
+                    src="../images/micheledoe-mobile-1x."
+                    alt="hero1"
+                    width="450"
+                    height="346"
+                  />
+                </picture>
                 <p class="gallery-top-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Debitis ratione neque natus!
@@ -318,13 +408,36 @@
             </li>
             <li class="gallery-item">
               <div class="gallety-text-wrap">
-                <img
-                  class="gallery-image"
-                  src="../images/alanblack.jpg"
-                  alt="Alan Black"
-                  width="370"
-                  height="346"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ../images/alanback-desctope-1x.jpg 1x,
+                      ../images/alanback-desctope-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/alanback-tablet-1x.jpg 1x,
+                      ../images/alanback-tablet-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ../images/alanback-mobile-1x.jpg 1x,
+                      ../images/alanback-mobile-2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                  />
+
+                  <img
+                    src="../images/alanback-mobile-1x."
+                    alt="hero1"
+                    width="450"
+                    height="346"
+                  />
+                </picture>
                 <p class="gallery-top-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
@@ -364,8 +477,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="barbers-photos-gallery">
+      </section>
+      <section class="barbers-photos-gallery">
         <div class="container">
           <p class="barbers-text">In Latin, "barba" means "beard"</p>
           <ul class="barbers-list">
@@ -407,8 +520,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <div class="contact-wrap">
+      </section>
+      <div class="contact-wrap">
         <div class="container">
           <section class="online">
             <h2 class="online-title title">Online-booking</h2>
@@ -462,14 +575,14 @@
                 </ul>
               </address>
 
-             <div class="working-hours-wrap">
+              <div class="working-hours-wrap">
                 <p class="contacts-subtitle">Working hours</p>
                 <p class="contacts-schedule">Every day from 9:00 to 22:00</p>
-             </div>
+              </div>
             </div>
           </section>
         </div>
-      </div> -->
+      </div>
     </main>
 
     <footer class="footer">
@@ -542,5 +655,6 @@
       </div>
     </div> -->
     <script src="../js/modal.js"></script>
+    <script src="../js/slider.js"></script>
   </body>
 </html>
