@@ -386,10 +386,11 @@ img {
 }
 
 .count-item {
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  gap: 12px;
+
 }
 .count-item::before {
   content: " ";
