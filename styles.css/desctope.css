@@ -5,6 +5,10 @@
   .menu-open {
     display: none;
   }
+
+  .mob-menu {
+    display: none;
+  }
   /* header + hero */
 
   .header > .container {
