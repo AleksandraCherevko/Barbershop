@@ -50,6 +50,63 @@
           <button type="button" class="header-btn btn" data-modal-open>
             Online-booking
           </button>
+          <button type="button" class="menu-open" data-menu-open>
+            <svg class="menu-open-icon" width="32" height="22">
+              <use href="../images/icons.svg#icon-hamburger"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mob-menu" data-menu>
+          <div class="container">
+            <button type="button" class="menu-close" data-menu-close>
+              <svg class="menu-close-icon" width="24" height="24">
+                <use href="../images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link current" href="#about">About</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="#prices"
+                  >Services and prices</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="#barbers">Barbers</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+
+            <a class="mob-menu-tel" href="tel:+380441111111"
+              >+38 044 111 11 11</a
+            >
+            <button type="button" class="mob-menu-btn btn" data-modal-open>
+              Online-booking
+            </button>
+            <ul class="mob-soc-list">
+              <li class="mob-soc-item">
+                <a
+                  class="mob-soc-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-soc-item">
+                <a
+                  class="mob-soc-link"
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -309,7 +366,7 @@
                 <li class="barbers-soc-item">
                   <a
                     href="https://www.instagram.com/"
-                    targer="_blank"
+                    target="_blank"
                     class="barbers-soc-link link"
                     ><svg class="barbers-soc-icon" width="20" height="20">
                       <use href="../images/icons.svg#icon-instagram"></use>
@@ -665,21 +722,20 @@
             <div class="contact-booking-wrap">
               <address class="contacts-address">
                 <ul class="contacts-list list">
-                  <div class="contacts-icons-dec">
-                    <li class="contacts-item">
-                      <svg class="contacts-icon" width="15" height="15">
-                        <use href="../images/icons.svg#icon-map"></use>
-                      </svg>
-                      <a
-                        class="contacts-link bold link"
-                        href="https://goo.gl/maps/ytF1UNt15VfvuMmM8"
-                        target="_blank"
-                        rel="noopener noreferrer nofollow"
-                      >
-                        st. Vasilkivska, 7A Kyiv, 08132</a
-                      >
-                    </li>
-                  </div>
+                  <li class="contacts-item">
+                    <svg class="contacts-icon" width="15" height="15">
+                      <use href="../images/icons.svg#icon-map"></use>
+                    </svg>
+                    <a
+                      class="contacts-link bold link"
+                      href="https://goo.gl/maps/ytF1UNt15VfvuMmM8"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                    >
+                      st. Vasilkivska, 7A Kyiv, 08132</a
+                    >
+                  </li>
+
                   <li class="contacts-item">
                     <svg class="contacts-icon" width="15" height="15">
                       <use href="../images/icons.svg#icon-phone"></use>
@@ -688,6 +744,7 @@
                       >+38 044 111 11 11</a
                     >
                   </li>
+
                   <li class="contacts-item">
                     <svg class="contacts-icon" width="15" height="15">
                       <use href="../images/icons.svg#icon-email"></use>
@@ -735,7 +792,7 @@
       </div>
     </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal container">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-close-icon" width="10" height="10">
@@ -777,8 +834,8 @@
           </div>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="../js/modal.js"></script>
-    <script src="../js/slider.js"></script>
+    <script src="../js/menu.js"></script>
   </body>
 </html>

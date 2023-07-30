@@ -2,7 +2,9 @@
   .container {
     width: 1200px;
   }
-
+  .menu-open {
+    display: none;
+  }
   /* header + hero */
 
   .header > .container {

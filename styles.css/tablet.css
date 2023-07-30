@@ -3,6 +3,9 @@
     width: 720px;
   }
 
+  .menu-open {
+    display:none;
+  }
   /* header + hero */
 
   .header > .container {
