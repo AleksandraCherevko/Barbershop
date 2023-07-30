@@ -155,13 +155,13 @@ img {
 }
 
 .menu-open {
+  padding-top: 48px;
+  padding-right: 40px;
   width: 32px;
   height: 22px;
   padding: 0;
   background-color: transparent;
   border: none;
-  padding-top: 48px;
-  padding-bottom: 48px;
 }
 
 .menu-open-icon {
@@ -630,8 +630,8 @@ img {
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
-  width: 193px;
-  height: 130px;
+  max-width: 193px;
+  max-height: 130px;
   background-color: #f7f7f7;
   text-align: center;
   display: block;
