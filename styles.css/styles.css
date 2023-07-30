@@ -116,7 +116,7 @@ img {
 }
 .navlogo {
   margin-right: 100px;
-stroke:#f7f7f7;
+  stroke: #f7f7f7;
 }
 .header-list {
   display: none;
@@ -425,7 +425,6 @@ stroke:#f7f7f7;
   width: 306px;
 }
 .about-after-title {
-  width: 418px;
   margin-bottom: 20px;
   font-size: 16px;
   font-weight: 400;
@@ -613,6 +612,7 @@ stroke:#f7f7f7;
   color: var(--second-text-color);
 }
 .benefits-after-title {
+  width: 418px;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.7;
@@ -719,8 +719,8 @@ stroke:#f7f7f7;
 .list {
 }
 .barbers-soc-item {
-  width: 44px;
-  height: 44px;
+  /* width: 44px;
+  height: 44px; */
 }
 .barbers-soc-link {
   width: 100%;

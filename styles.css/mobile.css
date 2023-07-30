@@ -5,14 +5,13 @@
   /* header + hero */
 
   .header > .container {
-    max-width: 480px;
+    max-width: 450px;
     width: 100%;
   }
 
   .hero > .container {
-    max-width: 480px;
+    max-width: 450px;
     width: 100%;
-
   }
 
   /* about */
@@ -30,16 +29,16 @@
 
   /* barbers */
   .barbers-photos-gallery > .container {
-    max-width: 448px;
+    max-width: 418px;
     width: 100%;
   }
 
   .gallery > .container {
-    max-width: 480px;
+    max-width: 418px;
     width: 100%;
   }
   .benefits > .container {
-    max-width: 448px;
+    max-width: 418px;
     width: 100%;
   }
 
