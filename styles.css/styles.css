@@ -115,8 +115,8 @@ img {
   margin-right: auto;
 }
 .navlogo {
-  display: none;
-  fill: #ffffff;
+  margin-right: 100px;
+stroke:#f7f7f7;
 }
 .header-list {
   display: none;
@@ -994,7 +994,6 @@ img {
 }
 
 /* backdrop */
-
 
 .backdrop {
   width: 100%;
