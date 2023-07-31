@@ -3,59 +3,23 @@
     width: 480px;
   }
   /* header + hero */
-  .navigation > .container {
-    max-width: 400px;
-    width: 100%;
-  }
-  .header > .container {
-    max-width: 400px;
-    width: 100%;
-  }
-
-  .hero > .container {
-    max-width: 450px;
-    width: 100%;
-  }
 
   /* about */
 
-  .about > .container {
-    max-width: 418px;
-    width: 100%;
-  }
+
   /* count */
 
-  .count > .container {
-    max-width: 418px;
-    width: 100%;
-  }
+  
 
   /* barbers */
-  .barbers-photos-gallery > .container {
-    max-width: 418px;
-    width: 100%;
-  }
 
-  .gallery > .container {
-    max-width: 418px;
-    width: 100%;
-  }
-  .benefits > .container {
-    max-width: 418px;
-    width: 100%;
-  }
 
+
+ 
   /* booking  */
 
-  .online > .container {
-    max-width: 480px;
-    width: 100%;
-  }
 
-  .contacts > .container {
-    max-width: 418px;
-    width: 100%;
-  }
+
 
   /* footer */
 

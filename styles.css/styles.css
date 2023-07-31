@@ -104,7 +104,8 @@ img {
 }
 
 .header > .container {
-  width: 480px;
+  max-width: 400px;
+  width: 100%;
   display: flex;
   align-items: center;
   padding-right: 32px;
@@ -114,6 +115,11 @@ img {
   align-items: center;
   margin-right: auto;
 }
+.navigation > .container {
+  /* max-width: 400px; */
+  width: 100%;
+}
+
 .navlogo {
   margin-right: 100px;
   stroke: #f7f7f7;
@@ -272,9 +278,9 @@ img {
 }
 /* ---------------------------------------------------------------------- hero------------------------------------------------------------------- */
 .hero > .container {
+  width: 100%;
   display: flex;
   padding: 0;
-  width: 100%;
 }
 .hero-soc-wrap {
   display: none;
@@ -379,8 +385,11 @@ img {
 }
 /* ---------------------------------------------------------------------------------about ------------------------------------------------------------*/
 .about > .container {
+  max-width: 418px;
+  width: 100%;
   display: flex;
   gap: 30px;
+  justify-content: center;
 }
 
 .about {
@@ -431,14 +440,15 @@ img {
   line-height: 1.65;
   letter-spacing: 0.02em;
   color: #555555;
+  width: 418px;
 }
 .about-text {
   margin-bottom: 20px;
   font-size: 14px;
-  width: 418px;
   line-height: 1.85;
   letter-spacing: 0.02em;
   color: #555555;
+  width: 418px;
 }
 
 .about-button {
@@ -446,19 +456,25 @@ img {
 }
 
 /* -----------------------------------------------------count----------------------------------- */
+.count > .container {
+  max-width: 480px;
+  width: 100%;
+}
 .count {
   padding-top: 84px;
   padding-bottom: 84px;
   background-color: black;
   background-image: url(../images/price.png);
-
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
 }
-
+.count-wrap > .container {
+  width: 418px;
+}
 .count-wrap {
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   padding-top: 30px;
@@ -544,6 +560,12 @@ img {
 }
 
 /* ------------------------------------------------------benefits -----------------------------------------------------------------------*/
+.benefits > .container {
+  max-width: 418px;
+  width: 100%;
+  display: flex;
+}
+
 .benefits {
   padding-top: 84px;
   padding-bottom: 84px;
@@ -554,9 +576,6 @@ img {
   flex-wrap: wrap;
 }
 
-.benefits > .container {
-  display: flex;
-}
 .benefits-count {
   font-size: 42px;
   font-weight: 700;
@@ -574,7 +593,7 @@ img {
   top: 7px;
   color: var(--focus-color);
 }
-.benefits-wrap {
+.benefits-count-wrap > .container {
   width: 418px;
 }
 .benefits-text {
@@ -630,8 +649,8 @@ img {
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
-  max-width: 193px;
-  max-height: 130px;
+  width: 193px;
+  height: 130px;
   background-color: #f7f7f7;
   text-align: center;
   display: block;
@@ -652,6 +671,11 @@ img {
   row-gap: 30px;
 }
 /* ---------------------------------------------gallery------------------------------------------------*/
+.gallery > .container {
+  max-width: 418px;
+  width: 100%;
+}
+
 .gallery {
   padding-top: 84px;
   padding-bottom: 84px;
@@ -723,8 +747,8 @@ img {
   height: 44px; */
 }
 .barbers-soc-link {
-  width: 100%;
-  height: 100%;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background-color: var(--title-color);
   display: flex;
@@ -732,14 +756,16 @@ img {
   justify-content: center;
   transition: fill 300ms linear;
 }
-.link {
-}
 
 .barbers-soc-icon:hover,
 .barbers-soc-icon:focus {
   fill: var(--focus-color);
 }
 /* -----------------------------------------------------barbers photos -----------------------------------------------------*/
+.barbers-photos-gallery > .container {
+  max-width: 418px;
+  width: 100%;
+}
 .barbers-name {
   margin-top: 24px;
   font-size: 18px;
@@ -865,8 +891,25 @@ img {
   padding-top: 84px;
   padding-bottom: 84px;
 
-  width: calc(100% - 15px);
-  padding-left: 20px;
+  /* width: calc(100% - 15px); */
+  /* padding-left: 20px; */
+}
+
+.contacts {
+
+  background-image: var(--bg-gradient), url(../images/Bg.jpg);
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  flex-grow: 1;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .contacts-background {
+    background-image: var(--bg-gradient), url(../images/Bg.jpg);
+  }
 }
 
 .contacts-icon {
