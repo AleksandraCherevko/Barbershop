@@ -312,14 +312,15 @@ img {
       rgba(25, 28, 38, 0.2)
     ),
     url(../img/hero-bg.jpeg); */
-  background-image: var(--bg-gradient), url(../images/hero.mobile.jpg);
+
+
+  background-image: var(--bg-gradient), url(../images/hero-mob-1x.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   flex-grow: 1;
-  padding: 210px 10px;
+  padding: 272px 100px 208px 150px;
 }
-
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -895,36 +896,14 @@ img {
   /* padding-left: 20px; */
 }
 
-.contacts {
-
-  background-image: var(--bg-gradient), url(../images/Bg.jpg);
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  flex-grow: 1;
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .contacts-background {
-    background-image: var(--bg-gradient), url(../images/Bg.jpg);
-  }
-}
-
 .contacts-icon {
   fill: #9da4bd;
   margin-right: 8px;
 }
 
 .contact-wrap {
-  /* max-width: 1600px; */
   margin: 0 auto;
   background-color: #191c26;
-  background-image: url(../img/contacts-bg.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  /* background-size: calc(50% - 15px) 100%; */
 }
 .contact-wrap > .container {
   display: flex;
@@ -982,6 +961,7 @@ img {
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
+
 /* ---------------------------------------------------------------footer ---------------------------------------------------------------*/
 .footer {
   padding-top: 32px;

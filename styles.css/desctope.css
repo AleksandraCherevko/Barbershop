@@ -239,7 +239,9 @@
   .online-input {
     width: 270px;
   }
-
+.contact-wrap{
+    /* max-width: 1600px; */
+}
   .contacts {
     padding-top: 130px;
     padding-bottom: 120px;
