@@ -724,7 +724,10 @@ img {
 /* .gallety-text-wrap > .container {
   width: 418px;
 } */
-
+.gallety-text-wrap {
+  position: relative;
+  overflow: hidden;
+}
 
 .gallery-top-text {
   position: absolute;
