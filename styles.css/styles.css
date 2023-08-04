@@ -278,6 +278,7 @@ img {
 }
 /* ---------------------------------------------------------------------- hero------------------------------------------------------------------- */
 .hero > .container {
+  max-width: 480px;
   width: 100%;
   display: flex;
   padding: 0;
@@ -313,13 +314,12 @@ img {
     ),
     url(../img/hero-bg.jpeg); */
 
-
   background-image: var(--bg-gradient), url(../images/hero-mob-1x.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   flex-grow: 1;
-  padding: 272px 100px 208px 150px;
+  padding: 272px 100px 208px 50px;
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -390,7 +390,7 @@ img {
   width: 100%;
   display: flex;
   gap: 30px;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .about {
@@ -471,7 +471,7 @@ img {
   background-repeat: no-repeat;
   margin: 0 auto;
 }
-.count-wrap > .container {
+.count-wrap {
   width: 418px;
 }
 .count-wrap {
@@ -518,8 +518,14 @@ img {
   background-color: currentColor;
 }
 .count-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
   margin-bottom: 44px;
   color: var(--title-color);
+  /* width: 418px; */
 }
 
 .count-item {
@@ -594,9 +600,9 @@ img {
   top: 7px;
   color: var(--focus-color);
 }
-.benefits-count-wrap > .container {
+/* .benefits-count-wrap > .container {
   width: 418px;
-}
+} */
 .benefits-text {
   font-size: 11px;
   font-weight: 600;
@@ -715,11 +721,10 @@ img {
 .gallery-item:hover .gallery-top-text {
   transform: translateY(0);
 }
+/* .gallety-text-wrap > .container {
+  width: 418px;
+} */
 
-.gallety-text-wrap {
-  position: relative;
-  overflow: hidden;
-}
 
 .gallery-top-text {
   position: absolute;
