@@ -465,34 +465,38 @@ img {
   padding-top: 84px;
   padding-bottom: 84px;
   background-color: black;
-  background-image: url(../images/price.png);
+  background-image:  var(--bg-gradient), url(../images/prices-mob-2x.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
 }
-.count-wrap {
-  width: 418px;
-}
+
 .count-wrap {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   padding-top: 30px;
-  padding-right: 20px;
+  /* padding-right: 20px; */
   padding-bottom: 30px;
-  padding-left: 20px;
+  /* padding-left: 20px; */
   background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   /* gap: 30px;
   margin-bottom: 44px; */
 }
 .count-list {
   /* background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%); */
-  /* width: calc((100% - 30px) / 2); */
-  /* padding-top: 30px;
+  width: 100%;
+  padding-top: 30px;
   padding-right: 20px;
   padding-bottom: 30px;
-  padding-left: 20px; */
+  padding-left: 20px;
+}
+.count-list:first-child {
+  padding-bottom: 0;
+}
+.count-list:last-child {
+  padding-top: 0;
 }
 /* .count-list:first-child {
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
