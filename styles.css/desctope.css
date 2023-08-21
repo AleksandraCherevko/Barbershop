@@ -2,14 +2,15 @@
   .container {
     width: 1200px;
   }
-  .menu-open {
+}
+  /* .menu-open {
     display: none;
   }
 
   .mob-menu {
     display: none;
   }
-  /* header + hero */
+
 
   .header > .container {
     max-width: 1225px;
@@ -72,8 +73,7 @@
     flex-wrap: nowrap;
     gap: 30px;
   }
-  /* about */
-
+ 
   .about > .container {
     max-width: 1170px;
     width: 100%;
@@ -100,7 +100,7 @@
   .about-after-title {
     width: 470px;
   }
-  /* count */
+
 
   .count > .container {
     max-width: 1170px;
@@ -153,7 +153,7 @@
   }
 
   /* benefits */
-  .benefits > .container {
+  /* .benefits > .container {
     max-width: 1170px;
     width: 100%;
   }
@@ -188,7 +188,7 @@
   .benefits-wrap {
     width: 500px;
   }
-  /* barbers  */
+
   .gallery {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -206,7 +206,7 @@
   .gallery-item {
     width: calc((100% - 60px) / 3);
   }
-  /* gallery */
+
   .barbers-photos-gallery > .container {
     max-width: 1200px;
     width: 100%;
@@ -223,7 +223,7 @@
     width: calc((100% - 90px) / 4);
   }
 
-  /* booking  */
+
   .online > .container {
     max-width: 1600px;
     width: 100%;
@@ -240,7 +240,7 @@
     width: 270px;
   }
 .contact-wrap{
-    /* max-width: 1600px; */
+
 }
   .contacts {
     padding-top: 130px;
@@ -249,10 +249,10 @@
     padding-left: 100px;
   }
 
-  /* footer */
+
 
   .footer > .container {
     max-width: 1600px;
     width: 100%;
   }
-}
+} */ */

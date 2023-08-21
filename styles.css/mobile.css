@@ -2,29 +2,4 @@
   .container {
     width: 480px;
   }
-  /* header + hero */
-
-  /* about */
-
-
-  /* count */
-
-  
-
-  /* barbers */
-
-
-
- 
-  /* booking  */
-
-
-
-
-  /* footer */
-
-  .footer > .container {
-    max-width: 380px;
-    width: 100%;
-  }
 }

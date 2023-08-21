@@ -25,11 +25,9 @@
     <header class="header">
       <div class="container">
         <nav class="navigation">
-          <img
-            class="navlogo"
-            src="../barbershop_logo.svg"
-            alt="barbershop_logo"
-          />
+          <svg class="logo" width="70" height="55">
+            <use href="../images/icons.svg#icon-logo-1"></use>
+          </svg>
           <ul class="header-list">
             <li class="header-item">
               <a class="header-link current" href="#about">About</a>
@@ -154,52 +152,18 @@
           <ul class="about-list">
             <li class="about-item">
               <picture>
-                <source
-                  srcset="
-                    ../images/hero1-desctope-1x.jpg 1x,
-                    ../images/hero1-desctope-2x.jpg 2x
-                  "
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
-                    ../images/about1-tablet-1x.jpg 1x,
-                    ../images/about1-tablet-2x.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
+                <source srcset="" media="(min-width: 1200px)" />
+                <source srcset="" media="(min-width: 768px)" />
 
-                <img
-                  src="../images/about1-tablet-2x.jpg "
-                  alt="hero1"
-                  width="330"
-                  height="235"
-                />
+                <img src="" alt="hero1" width="330" height="235" />
               </picture>
             </li>
             <li class="about-item">
               <picture>
-                <source
-                  srcset="
-                    ../images/hero2-desctope-1x.jpg 1x,
-                    ../images/hero2-desctope-2x.jpg 2x
-                  "
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
-                    ../images/about2-tablet-1x.jpg 1x,
-                    ../images/about2-tablet-1x.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
+                <source srcset="../ 1x, 2x" media="(min-width: 1200px)" />
+                <source srcset="1x, 2x" media="(min-width: 768px)" />
 
-                <img
-                  src="../images/about2-tablet-1x.jpg"
-                  alt="hero1"
-                  width="330"
-                  height="235"
-                />
+                <img src="" alt="hero1" width="330" height="235" />
               </picture>
             </li>
           </ul>
@@ -315,18 +279,18 @@
           <h2 class="gallery-title title">Our barbers</h2>
           <ul class="gallery-list">
             <li class="gallery-item">
-              <div class="gallety-text-wrap">
+              <div class="gallery-text-wrap">
                 <picture>
                   <source
                     srcset="
-                      ../images/johnsmith-desctope-1x.jpg 1x,
-                      ../images/johnsmith-desctope-2x.jpg 2x
+                      ../images/johnsmith-desctop-1x.jpg 1x,
+                      ../images/johnsmith-desctop-2x.jpg 2x
                     "
                     media="(min-width: 1200px)"
                   />
                   <source
                     srcset="
-                      ../images/johnsmith-tablet-1x.jpg   1x,
+                      ../images/johnsmith-tablet-1x.jpg 1x,
                       ../images/johnsmith-tablet-2x.jpg 2x
                     "
                     media="(min-width: 768px)"
@@ -339,7 +303,7 @@
                     media="(min-width: 480px)"
                   />
                   <img
-                    src="../images/johnsmith-mob-1x.jpg"
+                    src="../images/johnsmith-tablet-2x.jpg"
                     alt="John Smith"
                     width="450"
                     height="502"
@@ -397,12 +361,12 @@
               </ul>
             </li>
             <li class="gallery-item">
-              <div class="gallety-text-wrap">
+              <div class="gallery-text-wrap">
                 <picture>
                   <source
                     srcset="
-                      ../images/micheledoe-desctope-1x.jpg 1x,
-                      ../images/micheledoe-desctope-2x.jpg 2x
+                      ../images/micheledoe-desctop-1x.jpg 1x,
+                      ../images/micheledoe-desctop-2x.jpg 2x
                     "
                     media="(min-width: 1200px)"
                   />
@@ -422,10 +386,10 @@
                   />
 
                   <img
-                    src="../images/micheledoe-mob-1x."
+                    src="../images/micheledoe-tablet-2x.jpg 2x"
                     alt="Michele Doe"
                     width="450"
-                    height="346"
+                    height="520"
                   />
                 </picture>
                 <p class="gallery-top-text">
@@ -479,12 +443,12 @@
               </ul>
             </li>
             <li class="gallery-item">
-              <div class="gallety-text-wrap">
+              <div class="gallery-text-wrap">
                 <picture>
                   <source
                     srcset="
-                      ../images/alanback-desctope-1x.jpg 1x,
-                      ../images/alanback-desctope-2x.jpg 2x
+                      ../images/alanback-desctop-1x.jpg 1x,
+                      ../images/alanback-desctop-2x.jpg 2x
                     "
                     media="(min-width: 1200px)"
                   />
@@ -504,9 +468,9 @@
                   />
 
                   <img
-                    src="../images/alanback-mob-1x."
+                    src="../images/alanback-tablet-2x.jpg"
                     alt="Alan Black"
-                    width="418"
+                    width="450"
                     height="346"
                   />
                 </picture>
@@ -570,10 +534,11 @@
               <picture
                 ><source
                   srcset="
-                    ../images/barber1-desctope-1x.jpg 1x,
-                    ../images/barber1-desctope-2x.jpg 2x
+                    ../images/barber1-desctop-1x.jpg 1x,
+                    ../images/barber1-desctop-2x.jpg 2x
                   "
                   media="(min-width: 1200px)" />
+
                 <source
                   srcset="
                     ../images/barber1-tablet-1x.jpg 1x,
@@ -588,20 +553,21 @@
                   media="(min-width: 480px)" />
                 <img
                   class="barbers-photos"
-                  src="../images/barber1-mob-1x.jpg"
+                  src="../images/barber1-mob-2x.jpg"
                   alt="barber1"
                   width="418"
-                  height="346"
+                  height="502"
               /></picture>
             </li>
             <li class="barbers-item">
               <picture
                 ><source
                   srcset="
-                    ../images/barber2-desctope-1x.jpg 1x,
-                    ../images/barber2-desctope-2x.jpg 2x
+                    ../images/barber2-desctop-1x.jpg 1x,
+                    ../images/barber2-desctop-2x.jpg 2x
                   "
                   media="(min-width: 1200px)" />
+
                 <source
                   srcset="
                     ../images/barber2-tablet-1x.jpg 1x,
@@ -610,26 +576,27 @@
                   media="(min-width: 768px)" />
                 <source
                   srcset="
-                    ../images/barber2-mob-1x.jpg    1x,
-                    ../images/barber12-mob-2x.jpg2x
+                    ../images/barber2-mob-1x.jpg 1x,
+                    ../images/barber2-mob-2x.jpg 2x
                   "
                   media="(min-width: 480px)" />
                 <img
                   class="barbers-photos"
-                  src="../images/barber2-mob-1x.jpg"
+                  src="../images/barber2-mob-2x.jpg"
                   alt="barber2"
                   width="418"
-                  height="346"
+                  height="502"
               /></picture>
             </li>
             <li class="barbers-item">
               <picture
                 ><source
                   srcset="
-                    ../images/barber3-desctope-1x.jpg 1x,
-                    ../images/barber3-desctope-2x.jpg 2x
+                    ../images/barber3-desctop-1x.jpg 1x,
+                    ../images/barber3-desctop-2x.jpg 2x
                   "
                   media="(min-width: 1200px)" />
+
                 <source
                   srcset="
                     ../images/barber3-tablet-1x.jpg 1x,
@@ -644,20 +611,21 @@
                   media="(min-width: 480px)" />
                 <img
                   class="barbers-photos"
-                  src="../images/barber3-mob-1x.jpg"
-                  alt="barber3"
+                  src="../images/barber3-mob-2x.jpg"
+                  alt="barber1"
                   width="418"
-                  height="360"
+                  height="502"
               /></picture>
             </li>
             <li class="barbers-item">
               <picture
                 ><source
                   srcset="
-                    ../images/barber4-desctope-1x.jpg 1x,
-                    ../images/barber4-desctope-2x.jpg 2x
+                    ../images/barber4-desctop-1x.jpg 1x,
+                    ../images/barber4-desctop-2x.jpg 2x
                   "
                   media="(min-width: 1200px)" />
+
                 <source
                   srcset="
                     ../images/barber4-tablet-1x.jpg 1x,
@@ -672,89 +640,88 @@
                   media="(min-width: 480px)" />
                 <img
                   class="barbers-photos"
-                  src="../images/barber4-mob-1x.jpg"
+                  src="../images/barber4-mob-2x.jpg"
                   alt="barber4"
                   width="418"
-                  height="360"
+                  height="502"
               /></picture>
             </li>
           </ul>
         </div>
       </section>
-      <div class="contact-wrap">
+      <section class="booking">
         <div class="container">
-          <section class="online">
-            <h2 class="online-title title">Online-booking</h2>
-            <form class="online-form">
-              <input
-                type="text"
-                class="online-input online-item"
-                placeholder="Name*"
-                name="online-name "
-                required
-              />
-              <input
-                type="tel"
-                class="online-input online-item"
-                placeholder="Phone*"
-                name="online-tel"
-                required
-              />
-              <textarea
-                name="online-message"
-                class="online-text online-item"
-                placeholder="Message"
-              ></textarea>
-              <button type="submit" class="online-btn btn">Send</button>
-            </form>
-          </section>
-          <section class="contacts" id="contacts">
-            <h2 class="contacts-title title">Contacts</h2>
-            <div class="contact-booking-wrap">
-              <address class="contacts-address">
-                <ul class="contacts-list list">
-                  <li class="contacts-item">
-                    <svg class="contacts-icon" width="15" height="15">
-                      <use href="../images/icons.svg#icon-map"></use>
-                    </svg>
-                    <a
-                      class="contacts-link bold link"
-                      href="https://goo.gl/maps/ytF1UNt15VfvuMmM8"
-                      target="_blank"
-                      rel="noopener noreferrer nofollow"
-                    >
-                      st. Vasilkivska, 7A Kyiv, 08132</a
-                    >
-                  </li>
-
-                  <li class="contacts-item">
-                    <svg class="contacts-icon" width="15" height="15">
-                      <use href="../images/icons.svg#icon-phone"></use>
-                    </svg>
-                    <a class="contacts-link link" href="tel:+380441111111"
-                      >+38 044 111 11 11</a
-                    >
-                  </li>
-
-                  <li class="contacts-item">
-                    <svg class="contacts-icon" width="15" height="15">
-                      <use href="../images/icons.svg#icon-email"></use>
-                    </svg>
-                    <a class="contacts-link" href="mailto:barbershop@email.com"
-                      >barbershop@email.com</a
-                    >
-                  </li>
-                </ul>
-              </address>
-
-              <div class="working-hours-wrap">
-                <p class="contacts-subtitle">Working hours</p>
-                <p class="contacts-schedule">Every day from 9:00 to 22:00</p>
-              </div>
-            </div>
-          </section>
+          <h2 class="online-title title">Online-booking</h2>
+          <form class="online-form">
+            <input
+              type="text"
+              class="online-input online-item"
+              placeholder="Name*"
+              name="online-name "
+              required
+            />
+            <input
+              type="tel"
+              class="online-input online-item"
+              placeholder="Phone*"
+              name="online-tel"
+              required
+            />
+            <textarea
+              name="online-message"
+              class="online-text online-item"
+              placeholder="Message"
+            ></textarea>
+            <button type="submit" class="online-btn btn">Send</button>
+          </form>
         </div>
-      </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <h2 class="contacts-title title">Contacts</h2>
+
+          <address class="contacts-address">
+            <ul class="contacts-list list">
+              <li class="contacts-item">
+                <svg class="contacts-icon" width="15" height="15">
+                  <use href="../images/icons.svg#icon-map"></use>
+                </svg>
+                <a
+                  class="contacts-link bold link"
+                  href="https://goo.gl/maps/ytF1UNt15VfvuMmM8"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  st. Vasilkivska, 7A Kyiv, 08132</a
+                >
+              </li>
+
+              <li class="contacts-item">
+                <svg class="contacts-icon" width="15" height="15">
+                  <use href="../images/icons.svg#icon-phone"></use>
+                </svg>
+                <a class="contacts-link link" href="tel:+380441111111"
+                  >+38 044 111 11 11</a
+                >
+              </li>
+
+              <li class="contacts-item">
+                <svg class="contacts-icon" width="15" height="15">
+                  <use href="../images/icons.svg#icon-email"></use>
+                </svg>
+                <a class="contacts-link" href="mailto:barbershop@email.com"
+                  >barbershop@email.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <div class="working-hours-wrap">
+            <p class="contacts-subtitle">Working hours</p>
+            <p class="contacts-schedule">Every day from 9:00 to 22:00</p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
