@@ -58,7 +58,7 @@
 
   .hero-wrap {
     padding: 210px 10px;
-    background-image: var(--bg-gradient), url(../images/hero.tablet.jpg);
+    background-image: var(--bg-gradient), url(../images/hero-tablet-jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -70,10 +70,10 @@
   }
 
   .navlogo {
-    margin-right: 30px;
+
     display: block;
     margin-left: 0;
-    margin-right: 50px;
+  
     fill: #ffffff;
   }
 
