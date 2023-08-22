@@ -370,7 +370,9 @@ img {
   text-align: left;
   color: #555555;
 }
-
+.about-button {
+  color: var(--second-text-color);
+}
 /* count */
 
 .count > .container {
@@ -474,6 +476,7 @@ img {
 
 .count-wrap {
   background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+
 }
 
 /* benefits */
@@ -573,6 +576,8 @@ img {
   background-color: currentColor;
 }
 .benefits-title {
+  text-align: left;
+width: 418px;
   margin-bottom: 20px;
   font-size: 42px;
   font-weight: 700;
@@ -818,7 +823,7 @@ img {
 }
 
 .online-btn {
-  margin-left: 160px;
+  margin: 0 auto;
   color: var(--title-color);
 }
 

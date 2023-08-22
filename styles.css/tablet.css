@@ -2,9 +2,90 @@
   .container {
     width: 720px;
   }
+  .menu-open {
+    display: none;
+  }
+  .logo {
+    stroke: black;
+  }
+  .header > .container {
+    max-width: 555px;
+    width: 100%;
+  }
+
+  .header {
+    padding-top: 52px;
+    padding-bottom: 52px;
+    display: flex;
+  }
+  .header-list {
+    display: flex;
+    gap: 20px;
+  }
+
+  .header-item {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    color: var(--title-color);
+  }
+
+  .header-item:hover,
+  .header-item:focus {
+    color: var(--focus-color);
+  }
+
+  .header-button-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+  .header-bottom-menu {
+    display: flex;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+
+  .hero > .container {
+    max-width: 690px;
+    width: 100%;
+  }
+
+  .hero {
+    display: flex;
+    padding: 0;
+  }
+
+  .hero-wrap {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+    background-image: var(--bg-gradient), url(../images/hero-tablet-1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-wrap {
+      background-image: var(--bg-gradient), url(../images/hero-tablet-2x.jpg);
+    }
+  }
 }
 
-/* .menu-open {
+/* @media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+
+
+
+
+.menu-open {
     display: none;
   }
 
@@ -17,9 +98,9 @@
     max-width: 680px;
     width: 100%;
     display: flex;
-  } */
+  }
 
-/* .header-list {
+.header-list {
     font-size: 12px;
     font-weight: 600;
     line-height: 1.33;
@@ -83,9 +164,9 @@
     flex-direction: column-reverse;
     align-items: center;
     row-gap: 15px;
-  } */
+  }
 
-/* .about {
+.about {
     padding-top: 100px;
     padding-bottom: 100px;
   }
@@ -115,9 +196,9 @@
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-  } */
+  }
 
-/* .about-container-wrap {
+ .about-container-wrap {
     display: flex;
   }
 
@@ -260,5 +341,5 @@
   }
 
   .copy-text {
-    padding-top: 0;
-  } */
+    padding-top: 0}}
+     */
